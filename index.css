@@ -1,0 +1,139 @@
+/* Base */
+
+html {
+  color: #212121;
+  background: #f2f2f2;
+  font-family: "Roboto", sans-serif;
+  font-size: 62.5%;
+  line-height: 1.5;
+  height: 100%;
+}
+body {
+  font-size: 2rem;
+  font-weight: 300;
+  height: 100%;
+}
+a,
+button,
+label {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+a {
+  color: #06f;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Brainsparks logo */
+
+.brainsparks.logo {
+  display: inline-block;
+  height: 2.5em;
+  position: relative;
+}
+
+/* Radix.ai logo */
+
+.radix-ai.logo {
+  font-family: "Saira Condensed", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #06f;
+  font-size: 1.08em;
+}
+.radix-ai.logo > span {
+  font-weight: 200;
+}
+.radix-ai.logo:hover {
+  text-decoration: none;
+}
+
+/* Hero */
+
+#hero {
+  font-size: 2em;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-position: center center;
+  background-size: contain;
+  background-image: -webkit-radial-gradient(
+    center center,
+    circle cover,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.05) 80%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  background-image: radial-gradient(
+    center center,
+    circle cover,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.05) 80%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+}
+
+@media screen and (max-width: 450px) {
+  #hero {
+    background-image: none;
+  }
+}
+
+#hero .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+}
+
+#hero .container p {
+  text-align: center;
+  margin: 1.4em 0;
+}
+
+#hero .brainsparks.logo {
+  text-align: center;
+}
+#hero .brainsparks.logo + p {
+  width: 100%;
+}
+#hero .radix-ai.logo {
+  font-size: 1.4em;
+}
+
+#hero p {
+  color: rgba(0, 0, 0, 0.25);
+  /* text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.45); */
+  margin: 0;
+}
+
+#hero .next {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero .next p {
+  margin: 0 1.5em;
+}
+
+@media screen and (max-width: 450px) {
+  #hero {
+    height: 100%;
+  }
+  #hero .next p {
+    width: 100%;
+    margin-top: 1.4em;
+    margin-bottom: 1.4em;
+  }
+}
